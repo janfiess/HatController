@@ -164,18 +164,18 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 
 void white(){
-  Serial.println("A");
   currentPalette = testColors_a;
+  Serial.println("A");
 }
 
 void turquoise(){
-  Serial.println("B");
   currentPalette = testColors_b;
+  Serial.println("B");
 }
 
 void black(){
-  Serial.println("C");
   currentPalette = testColors_c;
+  Serial.println("C");
 } 
 
 void reconnect() {

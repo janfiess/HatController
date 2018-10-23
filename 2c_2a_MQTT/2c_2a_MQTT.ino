@@ -159,23 +159,20 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
   if ((char)payload[1] == '1') white();
   else if ((char)payload[1] == '2') turquoise();
-  else if ((char)payload[1] == '3') black();
+  else if ((char)payload[1] == '0') black();
 
 }
 
 void white(){
-  Serial.println("A");
-  currentPalette = testColors_a;
+  Serial.println("white");
 }
 
 void turquoise(){
-  Serial.println("B");
-  currentPalette = testColors_b;
+  Serial.println("turquoise");
 }
 
 void black(){
-  Serial.println("C");
-  currentPalette = testColors_c;
+  Serial.println("black");
 } 
 
 void reconnect() {

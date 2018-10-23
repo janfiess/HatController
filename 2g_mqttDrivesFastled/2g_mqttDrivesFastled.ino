@@ -60,8 +60,8 @@ TBlendType    currentBlending;
  * a. Config Colors with free RGB parameters, see bottom of code
  ****************************************************************/
  
-extern const TProgmemRGBGradientPalettePtr testColors_a_palette PROGMEM;
-CRGBPalette16 testColors_a( testColors_a_palette );
+// extern const TProgmemRGBGradientPalettePtr testColors_a_palette PROGMEM;
+// CRGBPalette16 testColors_a( testColors_a_palette );
 
 
 /****************************************************************
@@ -80,17 +80,21 @@ CRGBPalette16 testColors_c = CRGBPalette16( CRGB::Black, CRGB::White, CRGB::Blac
 /* FastLED end */
 
 
+/*debug variables */
+long lastTimestamp = 0;
 
 
 
 void setup() {
-
+  delay(3000); // 3 second delay for recovery
+  pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
+  Serial.begin(115200);
+  Serial.println("huhu");
   
 
   /* FastLed setup start */
 
-  delay(3000); // 3 second delay for recovery
-  Serial.begin(9600);
+
   
   // tell FastLED about the LED strip configuration
   FastLED.addLeds<LED_TYPE,DATA_PIN,COLOR_ORDER>(leds, NUM_LEDS)
@@ -104,24 +108,17 @@ void setup() {
    * choose color preset a, b or c as currentPalette
    *********************************************************************/
   
-  currentPalette = testColors_a;  // choose for a
-  // currentPalette = testColors_b;  // choose for b
+  // currentPalette = testColors_a;  // choose for a
+  currentPalette = testColors_b;  // choose for b
   // currentPalette = testColors_c;  // choose for c
 
 
   currentBlending = LINEARBLEND;
   FastLED.clear ();
 
-  
-
   /* FastLed setup end */
 
 
-
-
-  
-  pinMode(BUILTIN_LED, OUTPUT);     // Initialize the BUILTIN_LED pin as an output
-  Serial.begin(115200);
   setup_wifi();
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
@@ -164,18 +161,18 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 
 void white(){
+  // currentPalette = testColors_a;
   Serial.println("A");
-  currentPalette = testColors_a;
 }
 
 void turquoise(){
-  Serial.println("B");
   currentPalette = testColors_b;
+  Serial.println("B");
 }
 
 void black(){
-  Serial.println("C");
   currentPalette = testColors_c;
+  Serial.println("C");
 } 
 
 void reconnect() {
@@ -200,6 +197,18 @@ void reconnect() {
 }
 void loop() {
 
+  if((millis() - lastTimestamp) >= 10000){
+    Serial.println(millis());
+    Serial.printf("loop heap size: %u\n", ESP.getFreeHeap());
+    lastTimestamp = millis();
+  }
+/*
+  if(millis() > 50000){
+    Serial.println("restarting");
+    delay(3000);
+    ESP.restart();
+  }
+*/
   
   /* FastLED start */
 
@@ -262,6 +271,7 @@ void animLight() {
  * a. Config Colors with free RGB parameters  
  *******************************************/
 
+/*
 DEFINE_GRADIENT_PALETTE( testColors_rgb ) {
     0,     0,   0,   0,
    64,    90, 200,   0,
@@ -270,7 +280,7 @@ DEFINE_GRADIENT_PALETTE( testColors_rgb ) {
   255,     0,   0,   0};
 
 const TProgmemRGBGradientPalettePtr testColors_a_palette = testColors_rgb;
-
+*/
 
 /******************************************* 
  * b. Config Colors with color presets  
