@@ -8,7 +8,7 @@
 #define DATA_PIN    2
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
-#define NUM_LEDS    50
+#define NUM_LEDS    25
 #define BRIGHTNESS  100
 #define DELAY       25
 
@@ -18,13 +18,6 @@ static const uint8_t interval = 0;
 CRGBPalette16 currentPalette;
 TBlendType    currentBlending;
 
-
-/****************************************************************
- * a. Config Colors with free RGB parameters, see bottom of code
- ****************************************************************/
- 
-extern const TProgmemRGBGradientPalettePtr testColors_a_palette PROGMEM;
-CRGBPalette16 testColors_a( testColors_a_palette );
 
 
 /****************************************************************
@@ -57,8 +50,7 @@ void setup() {
    * choose color preset a, b or c as currentPalette
    *********************************************************************/
   
-  currentPalette = testColors_a;  // choose for a
-  // currentPalette = testColors_b;  // choose for b
+  currentPalette = testColors_b;  // choose for b
   // currentPalette = testColors_c;  // choose for c
 
 
@@ -81,23 +73,10 @@ void loop()
 void animLight(uint8_t colorIndex) {
   for( int i = 0; i < NUM_LEDS; i++) {
     leds[i] = ColorFromPalette( currentPalette, colorIndex, BRIGHTNESS, currentBlending);
-    colorIndex += 5;
+    colorIndex += 10;
   }
 }
 
-
-/******************************************* 
- * a. Config Colors with free RGB parameters  
- *******************************************/
-
-DEFINE_GRADIENT_PALETTE( testColors_rgb ) {
-    0,     0,   0,   0,
-   64,    90, 200,   0,
-  128,     0,   0,   0,
-  172,   222,   0, 200,
-  255,     0,   0,   0};
-
-const TProgmemRGBGradientPalettePtr testColors_a_palette = testColors_rgb;
 
 
 /******************************************* 
@@ -107,5 +86,6 @@ const TProgmemRGBGradientPalettePtr testColors_a_palette = testColors_rgb;
 const TProgmemPalette16 testColors_b PROGMEM =
 {
     CRGB::Red,
+    CRGB::Orange,
     CRGB::Black
 };
