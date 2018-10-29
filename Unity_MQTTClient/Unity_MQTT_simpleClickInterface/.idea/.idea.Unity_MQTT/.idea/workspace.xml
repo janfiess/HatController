@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="247662ee-4348-4132-9c20-384edd707b03" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MQTTBehaviour.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <marker date="1520152814000" expanded="false" signature="6:194" ph="..." />
+                <marker date="1520152814000" expanded="true" signature="239:2062" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="310:349" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="474:510" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="482:507" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="631:697" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="639:694" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="816:861" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="888:1545" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="965:1542" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="1113:1223" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="1606:1695" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="1782:1858" ph="{...}" />
+                <marker date="1520152814000" expanded="true" signature="1940:2060" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MqttClient.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/MqttClient.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+              <folding>
+                <marker date="1513688418000" expanded="true" signature="0:547" ph="/* Copyright (c) 2013, 2014 Paolo Patierno ... */" />
+                <marker date="1513688418000" expanded="false" signature="555:1690" ph="..." />
+                <marker date="1513688418000" expanded="true" signature="1483:1616" ph="/* alias needed due to Microsoft.SPOT.Trace in .Net Micro Framework ... */" />
+                <marker date="1513688418000" expanded="true" signature="1729:123203" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="1736:1788" ph="/// MQTT Client ... " />
+                <marker date="1513688418000" expanded="true" signature="1816:122962" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="2226:2339" ph="/// Delagate that defines event handler for PUBLISH message received ... " />
+                <marker date="1513688418000" expanded="true" signature="2448:2554" ph="/// Delegate that defines event handler for published message ... " />
+                <marker date="1513688418000" expanded="true" signature="2667:2772" ph="/// Delagate that defines event handler for subscribed topic ... " />
+                <marker date="1513688418000" expanded="true" signature="2887:2994" ph="/// Delagate that defines event handler for unsubscribed topic ... " />
+                <marker date="1513688418000" expanded="true" signature="3124:3239" ph="/* Delagate that defines event handler for SUBSCRIBE message received ... */" />
+                <marker date="1513688418000" expanded="true" signature="3352:3469" ph="/* Delagate that defines event handler for UNSUBSCRIBE message received ... */" />
+                <marker date="1513688418000" expanded="true" signature="3586:3699" ph="/* Delagate that defines event handler for CONNECT message received ... */" />
+                <marker date="1513688418000" expanded="true" signature="3808:3945" ph="/* Delegate that defines event handler for client disconnection (DISCONNECT message or not) ... */" />
+                <marker date="1513688418000" expanded="true" signature="4050:4163" ph="/// Delegate that defines event handler for cliet/peer disconnection ... " />
+                <marker date="1513688418000" expanded="true" signature="6999:7091" ph="/// Connection status between client and broker ... " />
+                <marker date="1513688418000" expanded="true" signature="7155:7221" ph="/// Client identifier ... " />
+                <marker date="1513688418000" expanded="true" signature="7284:7351" ph="/// Clean session flag ... " />
+                <marker date="1513688418000" expanded="true" signature="7416:7474" ph="/// Will flag ... " />
+                <marker date="1513688418000" expanded="true" signature="7535:7598" ph="/// Will QOS level ... " />
+                <marker date="1513688418000" expanded="true" signature="7663:7722" ph="/// Will topic ... " />
+                <marker date="1513688418000" expanded="true" signature="7786:7847" ph="/// Will message ... " />
+                <marker date="1513688418000" expanded="true" signature="7913:7983" ph="/// MQTT protocol version ... " />
+                <marker date="1513688418000" expanded="true" signature="8069:8137" ph="/* MQTT Client Session ... */" />
+                <marker date="1513688418000" expanded="true" signature="8298:8367" ph="/// MQTT client settings ... " />
+                <marker date="1513688418000" expanded="true" signature="8404:8466" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="8517:8645" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="8892:8912" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="8922:9385" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="9679:10015" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="10032:10172" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="10492:10512" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="10522:10855" ph="/* Constructor ... */" />
+                <marker date="1513688418000" expanded="true" signature="10522:11037" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="10904:11037" ph="/* &lt;param name=&quot;caCert&quot;&gt;CA certificate for secure connection&lt;/param&gt; ... */" />
+                <marker date="1513688418000" expanded="true" signature="11342:11803" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="11934:12596" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="12968:12988" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="12998:13696" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="14118:14138" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="14148:14988" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="15311:15492" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="15520:15656" ph="/* Constructor ... */" />
+                <marker date="1513688418000" expanded="true" signature="16733:17223" ph="/* MqttClient initialization ... */" />
+                <marker date="1513688418000" expanded="true" signature="16733:17707" ph="/// MqttClient initialization ... " />
+                <marker date="1513688418000" expanded="true" signature="17351:17707" ph="/* &lt;param name=&quot;userCertificateSelectionCallback&quot;&gt;A RemoteCertificateValidationCallback delegate responsible for  ... */" />
+                <marker date="1513688418000" expanded="true" signature="18352:20310" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="20320:20521" ph="/// Connect to broker ... " />
+                <marker date="1513688418000" expanded="true" signature="20566:20754" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="20764:21069" ph="/// Connect to broker ... " />
+                <marker date="1513688418000" expanded="true" signature="21172:21368" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="21378:21818" ph="/// Connect to broker ... " />
+                <marker date="1513688418000" expanded="true" signature="21988:22167" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="22177:22908" ph="/// Connect to broker ... " />
+                <marker date="1513688418000" expanded="true" signature="23227:25628" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="23658:23767" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="23800:23921" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="24377:25579" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="25013:25188" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="25638:25709" ph="/// Disconnect from broker ... " />
+                <marker date="1513688418000" expanded="true" signature="25742:25934" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="25955:26029" ph="/* Open client communication ... */" />
+                <marker date="1513688418000" expanded="true" signature="26546:26607" ph="/* Close client ... */" />
+                <marker date="1513688418000" expanded="true" signature="26546:26652" ph="/// Close client ... " />
+                <marker date="1513688418000" expanded="true" signature="26688:27628" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="27638:27784" ph="/// Execute ping to broker for keep alive ... " />
+                <marker date="1513688418000" expanded="true" signature="27823:28425" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="27908:28112" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="28144:28415" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="28446:28885" ph="/* Send CONNACK message to the client (connection accepted or not) ... */" />
+                <marker date="1513688418000" expanded="true" signature="29607:29784" ph="/* [v3.1.1] if client id isn't null, the CONNECT message has a cliend id with zero bytes length ... */" />
+                <marker date="1513688418000" expanded="true" signature="30213:30306" ph="/* convert in ms ... */" />
+                <marker date="1513688418000" expanded="true" signature="30757:31017" ph="/* Send SUBACK message to the client ... */" />
+                <marker date="1513688418000" expanded="true" signature="31303:31497" ph="/* Send UNSUBACK message to the client ... */" />
+                <marker date="1513688418000" expanded="true" signature="31721:32011" ph="/// Subscribe for message topics ... " />
+                <marker date="1513688418000" expanded="true" signature="32078:32426" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="32436:32660" ph="/// Unsubscribe for message topics ... " />
+                <marker date="1513688418000" expanded="true" signature="32711:33062" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="33072:33372" ph="/// Publish a message asynchronously (QoS Level 0 and not retained) ... " />
+                <marker date="1513688418000" expanded="true" signature="33432:33544" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="33554:33929" ph="/// Publish a message asynchronously ... " />
+                <marker date="1513688418000" expanded="true" signature="34017:34615" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="34625:34770" ph="/// Wrapper method for raising events ... " />
+                <marker date="1513688418000" expanded="true" signature="34836:35023" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="35033:35133" ph="/// Wrapper method for raising closing connection event ... " />
+                <marker date="1513688418000" expanded="true" signature="35176:35367" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="35229:35357" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="35377:35550" ph="/// Wrapper method for raising PUBLISH message received event ... " />
+                <marker date="1513688418000" expanded="true" signature="35620:35904" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="35683:35894" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="35914:36157" ph="/// Wrapper method for raising published message event ... " />
+                <marker date="1513688418000" expanded="true" signature="36233:36448" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="36290:36438" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="36458:36621" ph="/// Wrapper method for raising subscribed topic event ... " />
+                <marker date="1513688418000" expanded="true" signature="36684:36921" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="36742:36911" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="36931:37117" ph="/// Wrapper method for raising unsubscribed topic event ... " />
+                <marker date="1513688418000" expanded="true" signature="37178:37389" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="37238:37379" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="37410:37745" ph="/* Wrapper method for raising SUBSCRIBE message event ... */" />
+                <marker date="1513688418000" expanded="true" signature="38093:38361" ph="/* Wrapper method for raising UNSUBSCRIBE message event ... */" />
+                <marker date="1513688418000" expanded="true" signature="38688:38785" ph="/* Wrapper method for raising CONNECT message event ... */" />
+                <marker date="1513688418000" expanded="true" signature="39122:39222" ph="/* Wrapper method for raising DISCONNECT message event ... */" />
+                <marker date="1513688418000" expanded="true" signature="39447:39540" ph="/// Wrapper method for peer/client disconnection ... " />
+                <marker date="1513688418000" expanded="true" signature="39582:39739" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="39639:39729" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="39749:39869" ph="/// Send a message ... " />
+                <marker date="1513688418000" expanded="true" signature="39912:40421" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="39938:40172" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="40204:40411" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="40431:40540" ph="/// Send a message ... " />
+                <marker date="1513688418000" expanded="true" signature="40583:40761" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="40771:40974" ph="/// Send a message to the broker and wait answer ... " />
+                <marker date="1513688418000" expanded="true" signature="41031:41133" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="41143:41417" ph="/// Send a message to the broker and wait answer ... " />
+                <marker date="1513688418000" expanded="true" signature="41487:43215" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="41599:41814" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="41846:42468" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="42039:42268" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="42769:43061" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="43078:43205" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="43225:43417" ph="/// Send a message to the broker and wait answer ... " />
+                <marker date="1513688418000" expanded="true" signature="43474:43571" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="43581:43844" ph="/// Send a message to the broker and wait answer ... " />
+                <marker date="1513688418000" expanded="true" signature="43914:44115" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="44125:44402" ph="/// Enqueue a message into the inflight queue ... " />
+                <marker date="1513688418000" expanded="true" signature="44474:49360" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="44756:45982" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="44851:45295" ph="/* if it is a PUBLISH message already received (it is in the inflight queue), the publisher ... */" />
+                <marker date="1513688418000" expanded="true" signature="45544:45696" ph="/* the PUBLISH message is alredy in the inflight queue, we don't need to re-enqueue but we need ... */" />
+                <marker date="1513688418000" expanded="true" signature="45736:45950" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="46008:49277" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="46253:46847" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="46865:46999" ph="/* [v3.1.1] SUBSCRIBE and UNSUBSCRIBE aren't &quot;officially&quot; QOS = 1 ... */" />
+                <marker date="1513688418000" expanded="true" signature="47382:47536" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="47795:49245" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="48178:49223" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="48523:48740" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="48980:49197" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="49370:49517" ph="/// Enqueue a message into the internal queue ... " />
+                <marker date="1513688418000" expanded="true" signature="49571:54030" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="49778:51129" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="49873:50413" ph="/* if it is a PUBREL but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+                <marker date="1513688418000" expanded="true" signature="50662:50796" ph="/* the PUBLISH message isn't in the inflight queue, it was already processed so ... */" />
+                <marker date="1513688418000" expanded="true" signature="50836:51097" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="51257:52426" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="51352:51919" ph="/* if it is a PUBCOMP but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+                <marker date="1513688418000" expanded="true" signature="52309:52394" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="52552:53677" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="52647:53171" ph="/* if it is a PUBREC but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+                <marker date="1513688418000" expanded="true" signature="53560:53645" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="53703:54020" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="54040:54118" ph="/// Thread for receiving messages ... " />
+                <marker date="1513688418000" expanded="true" signature="54155:66858" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="54313:66848" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="54347:65290" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="54535:65000" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="54942:64928" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="65095:65272" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="65326:66834" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="65652:66140" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="66498:66580" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="66639:66816" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="66868:66955" ph="/// Thread for handling keep alive message ... " />
+                <marker date="1513688418000" expanded="true" signature="66994:68333" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="67254:68247" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="67569:68233" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="67761:68038" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="68063:68215" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="68343:68416" ph="/// Thread for raising event ... " />
+                <marker date="1513688418000" expanded="true" signature="68459:75957" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="68504:75947" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="68647:68782" ph="/* broker need to receive the first message (CONNECT) ... */" />
+                <marker date="1513688418000" expanded="true" signature="69858:75933" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="70311:75465" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="70460:75443" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="70532:75417" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="72887:72992" ph="/* raise published message event ... */" />
+                <marker date="1513688418000" expanded="true" signature="73286:73391" ph="/* raise message received event ... */" />
+                <marker date="1513688418000" expanded="true" signature="73693:73799" ph="/* raise published message event ... */" />
+                <marker date="1513688418000" expanded="true" signature="75673:75915" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="75967:76047" ph="/// Process inflight messages queue ... " />
+                <marker date="1513688418000" expanded="true" signature="76092:118032" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="76453:117499" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="76506:117485" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="76988:117467" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="77115:77475" ph="/* message received and peeked from internal queue is processed ... */" />
+                <marker date="1513688418000" expanded="true" signature="77660:77794" ph="/* set timeout tu MaxValue instead of Infinte (-1) to perform ... */" />
+                <marker date="1513688418000" expanded="true" signature="77878:78006" ph="/* a message inflight could be re-enqueued but we have to ... */" />
+                <marker date="1513688418000" expanded="true" signature="78186:116671" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="78925:116641" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="79229:79381" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="79546:79913" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="80650:82696" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="80952:81493" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="82906:83647" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="83961:85043" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="85282:85891" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="86190:86451" ph="/* QoS 1, waiting for PUBACK of a PUBLISH message sent or ... */" />
+                <marker date="1513688418000" expanded="true" signature="86537:94937" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="87163:90584" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="88001:90538" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="90121:90339" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="90781:94895" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="90978:91242" ph="/* check timeout for receiving PUBACK since PUBLISH was sent or ... */" />
+                <marker date="1513688418000" expanded="true" signature="91331:94179" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="91574:92136" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="92193:94129" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="92511:93826" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="93167:93409" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="93883:94075" ph="/* NOTE : not raise events for SUBACK or UNSUBACK not received ... */" />
+                <marker date="1513688418000" expanded="true" signature="94232:94849" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="95236:101486" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="95893:97976" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="96168:97930" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="98119:101444" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="98465:100792" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="98708:99270" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="99327:100742" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="99963:100193" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="100845:101398" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="101788:105645" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="102380:105304" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="102630:104939" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="104522:104740" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="104992:105258" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="105353:105603" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="105945:114092" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="106604:109010" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="106841:108964" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="108547:108765" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="109214:110588" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="109309:109497" ph="/* another PUBREC message for the current message due to a retransmitted PUBLISH ... */" />
+                <marker date="1513688418000" expanded="true" signature="109597:110542" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="110731:114050" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="111078:113398" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="111321:111883" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="111940:113348" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="112568:112798" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="113451:114004" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="114613:116085" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="115270:115513" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="116923:117083" ph="/* if message received is orphan, no corresponding message in inflight queue ... */" />
+                <marker date="1513688418000" expanded="true" signature="117163:117419" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="117548:118022" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="118042:118106" ph="/// Restore session ... " />
+                <marker date="1513688418000" expanded="true" signature="118144:120896" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="118226:120715" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="118329:120529" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="118515:120384" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="118853:120358" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="119154:119403" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="119557:120328" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="119780:119940" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="120134:120294" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="120550:120701" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="120774:120886" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="120918:121057" ph="/* Load a given session ... */" />
+                <marker date="1513688418000" expanded="true" signature="121409:121544" ph="/// Generate the next message identifier ... " />
+                <marker date="1513688418000" expanded="true" signature="121582:121852" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="121862:121958" ph="/// Finder class for PUBLISH message inside a queue ... " />
+                <marker date="1513688418000" expanded="true" signature="122002:122956" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="122212:122417" ph="/// Constructor ... " />
+                <marker date="1513688418000" expanded="true" signature="122495:122601" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="122646:122946" ph="{...}" />
+                <marker date="1513688418000" expanded="true" signature="122968:123030" ph="/// MQTT protocol version ... " />
+                <marker date="1513688418000" expanded="true" signature="123066:123201" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Publish</find>
+      <find>outpu</find>
+      <find>OnNewMqttMessage</find>
+      <find>clientid</find>
+      <find>clien</find>
+      <find>suscr</find>
+      <find>output</find>
+      <find>host</find>
+      <find>VRClient</find>
+      <find>vr</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeaconMixer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/Internal/MsgPublishedInternalEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/MqttClient.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/BeaconMixer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/logger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VRClient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MqttClient.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
+    <option name="y" value="49" />
+    <option name="width" value="1428" />
+    <option name="height" value="834" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Unity_MQTT (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="247662ee-4348-4132-9c20-384edd707b03" name="Default" comment="" />
+      <created>1520096784511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520096784511</updated>
+      <workItem from="1520096787408" duration="6659000" />
+      <workItem from="1520153663545" duration="2376000" />
+      <workItem from="1520156240696" duration="1759000" />
+      <workItem from="1520158961468" duration="465000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11259000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="49" width="1428" height="834" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.082633056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0839895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <marker date="1520152814000" expanded="false" signature="6:194" ph="..." />
+            <marker date="1520152814000" expanded="true" signature="239:2062" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="310:349" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="474:510" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="482:507" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="631:697" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="639:694" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="816:861" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="888:1545" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="965:1542" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1113:1223" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1606:1695" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1782:1858" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1940:2060" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/MqttClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding>
+            <marker date="1513688418000" expanded="true" signature="0:547" ph="/* Copyright (c) 2013, 2014 Paolo Patierno ... */" />
+            <marker date="1513688418000" expanded="false" signature="555:1690" ph="..." />
+            <marker date="1513688418000" expanded="true" signature="1483:1616" ph="/* alias needed due to Microsoft.SPOT.Trace in .Net Micro Framework ... */" />
+            <marker date="1513688418000" expanded="true" signature="1729:123203" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="1736:1788" ph="/// MQTT Client ... " />
+            <marker date="1513688418000" expanded="true" signature="1816:122962" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="2226:2339" ph="/// Delagate that defines event handler for PUBLISH message received ... " />
+            <marker date="1513688418000" expanded="true" signature="2448:2554" ph="/// Delegate that defines event handler for published message ... " />
+            <marker date="1513688418000" expanded="true" signature="2667:2772" ph="/// Delagate that defines event handler for subscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="2887:2994" ph="/// Delagate that defines event handler for unsubscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="3124:3239" ph="/* Delagate that defines event handler for SUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3352:3469" ph="/* Delagate that defines event handler for UNSUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3586:3699" ph="/* Delagate that defines event handler for CONNECT message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3808:3945" ph="/* Delegate that defines event handler for client disconnection (DISCONNECT message or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="4050:4163" ph="/// Delegate that defines event handler for cliet/peer disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="6999:7091" ph="/// Connection status between client and broker ... " />
+            <marker date="1513688418000" expanded="true" signature="7155:7221" ph="/// Client identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="7284:7351" ph="/// Clean session flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7416:7474" ph="/// Will flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7535:7598" ph="/// Will QOS level ... " />
+            <marker date="1513688418000" expanded="true" signature="7663:7722" ph="/// Will topic ... " />
+            <marker date="1513688418000" expanded="true" signature="7786:7847" ph="/// Will message ... " />
+            <marker date="1513688418000" expanded="true" signature="7913:7983" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="8069:8137" ph="/* MQTT Client Session ... */" />
+            <marker date="1513688418000" expanded="true" signature="8298:8367" ph="/// MQTT client settings ... " />
+            <marker date="1513688418000" expanded="true" signature="8404:8466" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8517:8645" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="8892:8912" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8922:9385" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="9679:10015" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10032:10172" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10492:10512" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10522:10855" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="10522:11037" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10904:11037" ph="/* &lt;param name=&quot;caCert&quot;&gt;CA certificate for secure connection&lt;/param&gt; ... */" />
+            <marker date="1513688418000" expanded="true" signature="11342:11803" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="11934:12596" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="12968:12988" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="12998:13696" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="14118:14138" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="14148:14988" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="15311:15492" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="15520:15656" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17223" ph="/* MqttClient initialization ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17707" ph="/// MqttClient initialization ... " />
+            <marker date="1513688418000" expanded="true" signature="17351:17707" ph="/* &lt;param name=&quot;userCertificateSelectionCallback&quot;&gt;A RemoteCertificateValidationCallback delegate responsible for  ... */" />
+            <marker date="1513688418000" expanded="true" signature="18352:20310" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20320:20521" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="20566:20754" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20764:21069" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21172:21368" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="21378:21818" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21988:22167" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="22177:22908" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="23227:25628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23658:23767" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23800:23921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="24377:25579" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25013:25188" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25638:25709" ph="/// Disconnect from broker ... " />
+            <marker date="1513688418000" expanded="true" signature="25742:25934" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25955:26029" ph="/* Open client communication ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26607" ph="/* Close client ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26652" ph="/// Close client ... " />
+            <marker date="1513688418000" expanded="true" signature="26688:27628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27638:27784" ph="/// Execute ping to broker for keep alive ... " />
+            <marker date="1513688418000" expanded="true" signature="27823:28425" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27908:28112" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28144:28415" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28446:28885" ph="/* Send CONNACK message to the client (connection accepted or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="29607:29784" ph="/* [v3.1.1] if client id isn't null, the CONNECT message has a cliend id with zero bytes length ... */" />
+            <marker date="1513688418000" expanded="true" signature="30213:30306" ph="/* convert in ms ... */" />
+            <marker date="1513688418000" expanded="true" signature="30757:31017" ph="/* Send SUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31303:31497" ph="/* Send UNSUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31721:32011" ph="/// Subscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32078:32426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="32436:32660" ph="/// Unsubscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32711:33062" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33072:33372" ph="/// Publish a message asynchronously (QoS Level 0 and not retained) ... " />
+            <marker date="1513688418000" expanded="true" signature="33432:33544" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33554:33929" ph="/// Publish a message asynchronously ... " />
+            <marker date="1513688418000" expanded="true" signature="34017:34615" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="34625:34770" ph="/// Wrapper method for raising events ... " />
+            <marker date="1513688418000" expanded="true" signature="34836:35023" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35033:35133" ph="/// Wrapper method for raising closing connection event ... " />
+            <marker date="1513688418000" expanded="true" signature="35176:35367" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35229:35357" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35377:35550" ph="/// Wrapper method for raising PUBLISH message received event ... " />
+            <marker date="1513688418000" expanded="true" signature="35620:35904" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35683:35894" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35914:36157" ph="/// Wrapper method for raising published message event ... " />
+            <marker date="1513688418000" expanded="true" signature="36233:36448" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36290:36438" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36458:36621" ph="/// Wrapper method for raising subscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="36684:36921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36742:36911" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36931:37117" ph="/// Wrapper method for raising unsubscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="37178:37389" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37238:37379" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37410:37745" ph="/* Wrapper method for raising SUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38093:38361" ph="/* Wrapper method for raising UNSUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38688:38785" ph="/* Wrapper method for raising CONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39122:39222" ph="/* Wrapper method for raising DISCONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39447:39540" ph="/// Wrapper method for peer/client disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="39582:39739" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39639:39729" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39749:39869" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="39912:40421" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39938:40172" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40204:40411" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40431:40540" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="40583:40761" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40771:40974" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41031:41133" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41143:41417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41487:43215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41599:41814" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41846:42468" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42039:42268" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42769:43061" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43078:43205" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43225:43417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43474:43571" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43581:43844" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43914:44115" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44125:44402" ph="/// Enqueue a message into the inflight queue ... " />
+            <marker date="1513688418000" expanded="true" signature="44474:49360" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44756:45982" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44851:45295" ph="/* if it is a PUBLISH message already received (it is in the inflight queue), the publisher ... */" />
+            <marker date="1513688418000" expanded="true" signature="45544:45696" ph="/* the PUBLISH message is alredy in the inflight queue, we don't need to re-enqueue but we need ... */" />
+            <marker date="1513688418000" expanded="true" signature="45736:45950" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46008:49277" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46253:46847" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46865:46999" ph="/* [v3.1.1] SUBSCRIBE and UNSUBSCRIBE aren't &quot;officially&quot; QOS = 1 ... */" />
+            <marker date="1513688418000" expanded="true" signature="47382:47536" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="47795:49245" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48178:49223" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48523:48740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48980:49197" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49370:49517" ph="/// Enqueue a message into the internal queue ... " />
+            <marker date="1513688418000" expanded="true" signature="49571:54030" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49778:51129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49873:50413" ph="/* if it is a PUBREL but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="50662:50796" ph="/* the PUBLISH message isn't in the inflight queue, it was already processed so ... */" />
+            <marker date="1513688418000" expanded="true" signature="50836:51097" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51257:52426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51352:51919" ph="/* if it is a PUBCOMP but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="52309:52394" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52552:53677" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52647:53171" ph="/* if it is a PUBREC but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="53560:53645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="53703:54020" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54040:54118" ph="/// Thread for receiving messages ... " />
+            <marker date="1513688418000" expanded="true" signature="54155:66858" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54313:66848" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54347:65290" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54535:65000" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54942:64928" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65095:65272" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65326:66834" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65652:66140" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66498:66580" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66639:66816" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66868:66955" ph="/// Thread for handling keep alive message ... " />
+            <marker date="1513688418000" expanded="true" signature="66994:68333" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67254:68247" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67569:68233" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67761:68038" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68063:68215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68343:68416" ph="/// Thread for raising event ... " />
+            <marker date="1513688418000" expanded="true" signature="68459:75957" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68504:75947" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68647:68782" ph="/* broker need to receive the first message (CONNECT) ... */" />
+            <marker date="1513688418000" expanded="true" signature="69858:75933" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70311:75465" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70460:75443" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70532:75417" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="72887:72992" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73286:73391" ph="/* raise message received event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73693:73799" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="75673:75915" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="75967:76047" ph="/// Process inflight messages queue ... " />
+            <marker date="1513688418000" expanded="true" signature="76092:118032" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76453:117499" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76506:117485" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76988:117467" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="77115:77475" ph="/* message received and peeked from internal queue is processed ... */" />
+            <marker date="1513688418000" expanded="true" signature="77660:77794" ph="/* set timeout tu MaxValue instead of Infinte (-1) to perform ... */" />
+            <marker date="1513688418000" expanded="true" signature="77878:78006" ph="/* a message inflight could be re-enqueued but we have to ... */" />
+            <marker date="1513688418000" expanded="true" signature="78186:116671" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="78925:116641" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79229:79381" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79546:79913" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80650:82696" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80952:81493" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="82906:83647" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="83961:85043" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="85282:85891" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="86190:86451" ph="/* QoS 1, waiting for PUBACK of a PUBLISH message sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="86537:94937" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="87163:90584" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="88001:90538" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90121:90339" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90781:94895" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90978:91242" ph="/* check timeout for receiving PUBACK since PUBLISH was sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="91331:94179" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="91574:92136" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92193:94129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92511:93826" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93167:93409" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93883:94075" ph="/* NOTE : not raise events for SUBACK or UNSUBACK not received ... */" />
+            <marker date="1513688418000" expanded="true" signature="94232:94849" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95236:101486" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95893:97976" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="96168:97930" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98119:101444" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98465:100792" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98708:99270" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99327:100742" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99963:100193" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="100845:101398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="101788:105645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102380:105304" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102630:104939" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104522:104740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104992:105258" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105353:105603" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105945:114092" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106604:109010" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106841:108964" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="108547:108765" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109214:110588" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109309:109497" ph="/* another PUBREC message for the current message due to a retransmitted PUBLISH ... */" />
+            <marker date="1513688418000" expanded="true" signature="109597:110542" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="110731:114050" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111078:113398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111321:111883" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111940:113348" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="112568:112798" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="113451:114004" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="114613:116085" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="115270:115513" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="116923:117083" ph="/* if message received is orphan, no corresponding message in inflight queue ... */" />
+            <marker date="1513688418000" expanded="true" signature="117163:117419" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="117548:118022" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118042:118106" ph="/// Restore session ... " />
+            <marker date="1513688418000" expanded="true" signature="118144:120896" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118226:120715" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118329:120529" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118515:120384" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118853:120358" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119154:119403" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119557:120328" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119780:119940" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120134:120294" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120550:120701" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120774:120886" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120918:121057" ph="/* Load a given session ... */" />
+            <marker date="1513688418000" expanded="true" signature="121409:121544" ph="/// Generate the next message identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="121582:121852" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="121862:121958" ph="/// Finder class for PUBLISH message inside a queue ... " />
+            <marker date="1513688418000" expanded="true" signature="122002:122956" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122212:122417" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="122495:122601" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122646:122946" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122968:123030" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="123066:123201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520152814000" expanded="false" signature="6:194" ph="..." />
+            <marker date="1520152814000" expanded="true" signature="239:2062" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="310:349" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="474:510" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="482:507" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="631:697" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="639:694" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="816:861" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="888:1545" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="965:1542" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1113:1223" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1606:1695" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1782:1858" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1940:2060" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/MqttClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding>
+            <marker date="1513688418000" expanded="true" signature="0:547" ph="/* Copyright (c) 2013, 2014 Paolo Patierno ... */" />
+            <marker date="1513688418000" expanded="false" signature="555:1690" ph="..." />
+            <marker date="1513688418000" expanded="true" signature="1483:1616" ph="/* alias needed due to Microsoft.SPOT.Trace in .Net Micro Framework ... */" />
+            <marker date="1513688418000" expanded="true" signature="1729:123203" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="1736:1788" ph="/// MQTT Client ... " />
+            <marker date="1513688418000" expanded="true" signature="1816:122962" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="2226:2339" ph="/// Delagate that defines event handler for PUBLISH message received ... " />
+            <marker date="1513688418000" expanded="true" signature="2448:2554" ph="/// Delegate that defines event handler for published message ... " />
+            <marker date="1513688418000" expanded="true" signature="2667:2772" ph="/// Delagate that defines event handler for subscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="2887:2994" ph="/// Delagate that defines event handler for unsubscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="3124:3239" ph="/* Delagate that defines event handler for SUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3352:3469" ph="/* Delagate that defines event handler for UNSUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3586:3699" ph="/* Delagate that defines event handler for CONNECT message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3808:3945" ph="/* Delegate that defines event handler for client disconnection (DISCONNECT message or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="4050:4163" ph="/// Delegate that defines event handler for cliet/peer disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="6999:7091" ph="/// Connection status between client and broker ... " />
+            <marker date="1513688418000" expanded="true" signature="7155:7221" ph="/// Client identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="7284:7351" ph="/// Clean session flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7416:7474" ph="/// Will flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7535:7598" ph="/// Will QOS level ... " />
+            <marker date="1513688418000" expanded="true" signature="7663:7722" ph="/// Will topic ... " />
+            <marker date="1513688418000" expanded="true" signature="7786:7847" ph="/// Will message ... " />
+            <marker date="1513688418000" expanded="true" signature="7913:7983" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="8069:8137" ph="/* MQTT Client Session ... */" />
+            <marker date="1513688418000" expanded="true" signature="8298:8367" ph="/// MQTT client settings ... " />
+            <marker date="1513688418000" expanded="true" signature="8404:8466" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8517:8645" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="8892:8912" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8922:9385" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="9679:10015" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10032:10172" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10492:10512" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10522:10855" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="10522:11037" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10904:11037" ph="/* &lt;param name=&quot;caCert&quot;&gt;CA certificate for secure connection&lt;/param&gt; ... */" />
+            <marker date="1513688418000" expanded="true" signature="11342:11803" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="11934:12596" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="12968:12988" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="12998:13696" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="14118:14138" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="14148:14988" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="15311:15492" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="15520:15656" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17223" ph="/* MqttClient initialization ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17707" ph="/// MqttClient initialization ... " />
+            <marker date="1513688418000" expanded="true" signature="17351:17707" ph="/* &lt;param name=&quot;userCertificateSelectionCallback&quot;&gt;A RemoteCertificateValidationCallback delegate responsible for  ... */" />
+            <marker date="1513688418000" expanded="true" signature="18352:20310" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20320:20521" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="20566:20754" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20764:21069" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21172:21368" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="21378:21818" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21988:22167" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="22177:22908" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="23227:25628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23658:23767" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23800:23921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="24377:25579" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25013:25188" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25638:25709" ph="/// Disconnect from broker ... " />
+            <marker date="1513688418000" expanded="true" signature="25742:25934" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25955:26029" ph="/* Open client communication ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26607" ph="/* Close client ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26652" ph="/// Close client ... " />
+            <marker date="1513688418000" expanded="true" signature="26688:27628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27638:27784" ph="/// Execute ping to broker for keep alive ... " />
+            <marker date="1513688418000" expanded="true" signature="27823:28425" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27908:28112" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28144:28415" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28446:28885" ph="/* Send CONNACK message to the client (connection accepted or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="29607:29784" ph="/* [v3.1.1] if client id isn't null, the CONNECT message has a cliend id with zero bytes length ... */" />
+            <marker date="1513688418000" expanded="true" signature="30213:30306" ph="/* convert in ms ... */" />
+            <marker date="1513688418000" expanded="true" signature="30757:31017" ph="/* Send SUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31303:31497" ph="/* Send UNSUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31721:32011" ph="/// Subscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32078:32426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="32436:32660" ph="/// Unsubscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32711:33062" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33072:33372" ph="/// Publish a message asynchronously (QoS Level 0 and not retained) ... " />
+            <marker date="1513688418000" expanded="true" signature="33432:33544" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33554:33929" ph="/// Publish a message asynchronously ... " />
+            <marker date="1513688418000" expanded="true" signature="34017:34615" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="34625:34770" ph="/// Wrapper method for raising events ... " />
+            <marker date="1513688418000" expanded="true" signature="34836:35023" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35033:35133" ph="/// Wrapper method for raising closing connection event ... " />
+            <marker date="1513688418000" expanded="true" signature="35176:35367" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35229:35357" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35377:35550" ph="/// Wrapper method for raising PUBLISH message received event ... " />
+            <marker date="1513688418000" expanded="true" signature="35620:35904" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35683:35894" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35914:36157" ph="/// Wrapper method for raising published message event ... " />
+            <marker date="1513688418000" expanded="true" signature="36233:36448" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36290:36438" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36458:36621" ph="/// Wrapper method for raising subscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="36684:36921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36742:36911" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36931:37117" ph="/// Wrapper method for raising unsubscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="37178:37389" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37238:37379" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37410:37745" ph="/* Wrapper method for raising SUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38093:38361" ph="/* Wrapper method for raising UNSUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38688:38785" ph="/* Wrapper method for raising CONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39122:39222" ph="/* Wrapper method for raising DISCONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39447:39540" ph="/// Wrapper method for peer/client disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="39582:39739" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39639:39729" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39749:39869" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="39912:40421" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39938:40172" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40204:40411" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40431:40540" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="40583:40761" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40771:40974" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41031:41133" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41143:41417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41487:43215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41599:41814" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41846:42468" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42039:42268" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42769:43061" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43078:43205" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43225:43417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43474:43571" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43581:43844" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43914:44115" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44125:44402" ph="/// Enqueue a message into the inflight queue ... " />
+            <marker date="1513688418000" expanded="true" signature="44474:49360" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44756:45982" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44851:45295" ph="/* if it is a PUBLISH message already received (it is in the inflight queue), the publisher ... */" />
+            <marker date="1513688418000" expanded="true" signature="45544:45696" ph="/* the PUBLISH message is alredy in the inflight queue, we don't need to re-enqueue but we need ... */" />
+            <marker date="1513688418000" expanded="true" signature="45736:45950" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46008:49277" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46253:46847" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46865:46999" ph="/* [v3.1.1] SUBSCRIBE and UNSUBSCRIBE aren't &quot;officially&quot; QOS = 1 ... */" />
+            <marker date="1513688418000" expanded="true" signature="47382:47536" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="47795:49245" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48178:49223" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48523:48740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48980:49197" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49370:49517" ph="/// Enqueue a message into the internal queue ... " />
+            <marker date="1513688418000" expanded="true" signature="49571:54030" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49778:51129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49873:50413" ph="/* if it is a PUBREL but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="50662:50796" ph="/* the PUBLISH message isn't in the inflight queue, it was already processed so ... */" />
+            <marker date="1513688418000" expanded="true" signature="50836:51097" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51257:52426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51352:51919" ph="/* if it is a PUBCOMP but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="52309:52394" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52552:53677" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52647:53171" ph="/* if it is a PUBREC but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="53560:53645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="53703:54020" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54040:54118" ph="/// Thread for receiving messages ... " />
+            <marker date="1513688418000" expanded="true" signature="54155:66858" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54313:66848" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54347:65290" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54535:65000" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54942:64928" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65095:65272" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65326:66834" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65652:66140" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66498:66580" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66639:66816" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66868:66955" ph="/// Thread for handling keep alive message ... " />
+            <marker date="1513688418000" expanded="true" signature="66994:68333" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67254:68247" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67569:68233" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67761:68038" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68063:68215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68343:68416" ph="/// Thread for raising event ... " />
+            <marker date="1513688418000" expanded="true" signature="68459:75957" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68504:75947" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68647:68782" ph="/* broker need to receive the first message (CONNECT) ... */" />
+            <marker date="1513688418000" expanded="true" signature="69858:75933" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70311:75465" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70460:75443" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70532:75417" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="72887:72992" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73286:73391" ph="/* raise message received event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73693:73799" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="75673:75915" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="75967:76047" ph="/// Process inflight messages queue ... " />
+            <marker date="1513688418000" expanded="true" signature="76092:118032" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76453:117499" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76506:117485" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76988:117467" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="77115:77475" ph="/* message received and peeked from internal queue is processed ... */" />
+            <marker date="1513688418000" expanded="true" signature="77660:77794" ph="/* set timeout tu MaxValue instead of Infinte (-1) to perform ... */" />
+            <marker date="1513688418000" expanded="true" signature="77878:78006" ph="/* a message inflight could be re-enqueued but we have to ... */" />
+            <marker date="1513688418000" expanded="true" signature="78186:116671" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="78925:116641" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79229:79381" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79546:79913" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80650:82696" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80952:81493" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="82906:83647" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="83961:85043" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="85282:85891" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="86190:86451" ph="/* QoS 1, waiting for PUBACK of a PUBLISH message sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="86537:94937" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="87163:90584" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="88001:90538" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90121:90339" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90781:94895" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90978:91242" ph="/* check timeout for receiving PUBACK since PUBLISH was sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="91331:94179" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="91574:92136" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92193:94129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92511:93826" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93167:93409" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93883:94075" ph="/* NOTE : not raise events for SUBACK or UNSUBACK not received ... */" />
+            <marker date="1513688418000" expanded="true" signature="94232:94849" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95236:101486" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95893:97976" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="96168:97930" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98119:101444" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98465:100792" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98708:99270" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99327:100742" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99963:100193" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="100845:101398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="101788:105645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102380:105304" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102630:104939" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104522:104740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104992:105258" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105353:105603" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105945:114092" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106604:109010" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106841:108964" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="108547:108765" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109214:110588" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109309:109497" ph="/* another PUBREC message for the current message due to a retransmitted PUBLISH ... */" />
+            <marker date="1513688418000" expanded="true" signature="109597:110542" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="110731:114050" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111078:113398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111321:111883" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111940:113348" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="112568:112798" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="113451:114004" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="114613:116085" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="115270:115513" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="116923:117083" ph="/* if message received is orphan, no corresponding message in inflight queue ... */" />
+            <marker date="1513688418000" expanded="true" signature="117163:117419" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="117548:118022" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118042:118106" ph="/// Restore session ... " />
+            <marker date="1513688418000" expanded="true" signature="118144:120896" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118226:120715" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118329:120529" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118515:120384" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118853:120358" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119154:119403" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119557:120328" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119780:119940" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120134:120294" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120550:120701" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120774:120886" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120918:121057" ph="/* Load a given session ... */" />
+            <marker date="1513688418000" expanded="true" signature="121409:121544" ph="/// Generate the next message identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="121582:121852" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="121862:121958" ph="/// Finder class for PUBLISH message inside a queue ... " />
+            <marker date="1513688418000" expanded="true" signature="122002:122956" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122212:122417" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="122495:122601" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122646:122946" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122968:123030" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="123066:123201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/logger.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BeaconMixer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520152814000" expanded="false" signature="6:194" ph="..." />
+            <marker date="1520152814000" expanded="true" signature="239:2062" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="310:349" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="474:510" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="482:507" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="631:697" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="639:694" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="816:861" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="888:1545" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="965:1542" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1113:1223" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1606:1695" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1782:1858" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1940:2060" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/MqttClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding>
+            <marker date="1513688418000" expanded="true" signature="0:547" ph="/* Copyright (c) 2013, 2014 Paolo Patierno ... */" />
+            <marker date="1513688418000" expanded="false" signature="555:1690" ph="..." />
+            <marker date="1513688418000" expanded="true" signature="1483:1616" ph="/* alias needed due to Microsoft.SPOT.Trace in .Net Micro Framework ... */" />
+            <marker date="1513688418000" expanded="true" signature="1729:123203" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="1736:1788" ph="/// MQTT Client ... " />
+            <marker date="1513688418000" expanded="true" signature="1816:122962" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="2226:2339" ph="/// Delagate that defines event handler for PUBLISH message received ... " />
+            <marker date="1513688418000" expanded="true" signature="2448:2554" ph="/// Delegate that defines event handler for published message ... " />
+            <marker date="1513688418000" expanded="true" signature="2667:2772" ph="/// Delagate that defines event handler for subscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="2887:2994" ph="/// Delagate that defines event handler for unsubscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="3124:3239" ph="/* Delagate that defines event handler for SUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3352:3469" ph="/* Delagate that defines event handler for UNSUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3586:3699" ph="/* Delagate that defines event handler for CONNECT message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3808:3945" ph="/* Delegate that defines event handler for client disconnection (DISCONNECT message or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="4050:4163" ph="/// Delegate that defines event handler for cliet/peer disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="6999:7091" ph="/// Connection status between client and broker ... " />
+            <marker date="1513688418000" expanded="true" signature="7155:7221" ph="/// Client identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="7284:7351" ph="/// Clean session flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7416:7474" ph="/// Will flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7535:7598" ph="/// Will QOS level ... " />
+            <marker date="1513688418000" expanded="true" signature="7663:7722" ph="/// Will topic ... " />
+            <marker date="1513688418000" expanded="true" signature="7786:7847" ph="/// Will message ... " />
+            <marker date="1513688418000" expanded="true" signature="7913:7983" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="8069:8137" ph="/* MQTT Client Session ... */" />
+            <marker date="1513688418000" expanded="true" signature="8298:8367" ph="/// MQTT client settings ... " />
+            <marker date="1513688418000" expanded="true" signature="8404:8466" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8517:8645" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="8892:8912" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8922:9385" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="9679:10015" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10032:10172" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10492:10512" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10522:10855" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="10522:11037" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10904:11037" ph="/* &lt;param name=&quot;caCert&quot;&gt;CA certificate for secure connection&lt;/param&gt; ... */" />
+            <marker date="1513688418000" expanded="true" signature="11342:11803" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="11934:12596" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="12968:12988" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="12998:13696" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="14118:14138" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="14148:14988" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="15311:15492" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="15520:15656" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17223" ph="/* MqttClient initialization ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17707" ph="/// MqttClient initialization ... " />
+            <marker date="1513688418000" expanded="true" signature="17351:17707" ph="/* &lt;param name=&quot;userCertificateSelectionCallback&quot;&gt;A RemoteCertificateValidationCallback delegate responsible for  ... */" />
+            <marker date="1513688418000" expanded="true" signature="18352:20310" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20320:20521" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="20566:20754" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20764:21069" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21172:21368" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="21378:21818" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21988:22167" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="22177:22908" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="23227:25628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23658:23767" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23800:23921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="24377:25579" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25013:25188" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25638:25709" ph="/// Disconnect from broker ... " />
+            <marker date="1513688418000" expanded="true" signature="25742:25934" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25955:26029" ph="/* Open client communication ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26607" ph="/* Close client ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26652" ph="/// Close client ... " />
+            <marker date="1513688418000" expanded="true" signature="26688:27628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27638:27784" ph="/// Execute ping to broker for keep alive ... " />
+            <marker date="1513688418000" expanded="true" signature="27823:28425" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27908:28112" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28144:28415" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28446:28885" ph="/* Send CONNACK message to the client (connection accepted or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="29607:29784" ph="/* [v3.1.1] if client id isn't null, the CONNECT message has a cliend id with zero bytes length ... */" />
+            <marker date="1513688418000" expanded="true" signature="30213:30306" ph="/* convert in ms ... */" />
+            <marker date="1513688418000" expanded="true" signature="30757:31017" ph="/* Send SUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31303:31497" ph="/* Send UNSUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31721:32011" ph="/// Subscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32078:32426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="32436:32660" ph="/// Unsubscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32711:33062" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33072:33372" ph="/// Publish a message asynchronously (QoS Level 0 and not retained) ... " />
+            <marker date="1513688418000" expanded="true" signature="33432:33544" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33554:33929" ph="/// Publish a message asynchronously ... " />
+            <marker date="1513688418000" expanded="true" signature="34017:34615" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="34625:34770" ph="/// Wrapper method for raising events ... " />
+            <marker date="1513688418000" expanded="true" signature="34836:35023" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35033:35133" ph="/// Wrapper method for raising closing connection event ... " />
+            <marker date="1513688418000" expanded="true" signature="35176:35367" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35229:35357" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35377:35550" ph="/// Wrapper method for raising PUBLISH message received event ... " />
+            <marker date="1513688418000" expanded="true" signature="35620:35904" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35683:35894" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35914:36157" ph="/// Wrapper method for raising published message event ... " />
+            <marker date="1513688418000" expanded="true" signature="36233:36448" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36290:36438" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36458:36621" ph="/// Wrapper method for raising subscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="36684:36921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36742:36911" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36931:37117" ph="/// Wrapper method for raising unsubscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="37178:37389" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37238:37379" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37410:37745" ph="/* Wrapper method for raising SUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38093:38361" ph="/* Wrapper method for raising UNSUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38688:38785" ph="/* Wrapper method for raising CONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39122:39222" ph="/* Wrapper method for raising DISCONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39447:39540" ph="/// Wrapper method for peer/client disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="39582:39739" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39639:39729" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39749:39869" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="39912:40421" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39938:40172" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40204:40411" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40431:40540" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="40583:40761" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40771:40974" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41031:41133" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41143:41417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41487:43215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41599:41814" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41846:42468" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42039:42268" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42769:43061" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43078:43205" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43225:43417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43474:43571" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43581:43844" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43914:44115" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44125:44402" ph="/// Enqueue a message into the inflight queue ... " />
+            <marker date="1513688418000" expanded="true" signature="44474:49360" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44756:45982" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44851:45295" ph="/* if it is a PUBLISH message already received (it is in the inflight queue), the publisher ... */" />
+            <marker date="1513688418000" expanded="true" signature="45544:45696" ph="/* the PUBLISH message is alredy in the inflight queue, we don't need to re-enqueue but we need ... */" />
+            <marker date="1513688418000" expanded="true" signature="45736:45950" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46008:49277" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46253:46847" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46865:46999" ph="/* [v3.1.1] SUBSCRIBE and UNSUBSCRIBE aren't &quot;officially&quot; QOS = 1 ... */" />
+            <marker date="1513688418000" expanded="true" signature="47382:47536" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="47795:49245" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48178:49223" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48523:48740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48980:49197" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49370:49517" ph="/// Enqueue a message into the internal queue ... " />
+            <marker date="1513688418000" expanded="true" signature="49571:54030" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49778:51129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49873:50413" ph="/* if it is a PUBREL but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="50662:50796" ph="/* the PUBLISH message isn't in the inflight queue, it was already processed so ... */" />
+            <marker date="1513688418000" expanded="true" signature="50836:51097" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51257:52426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51352:51919" ph="/* if it is a PUBCOMP but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="52309:52394" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52552:53677" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52647:53171" ph="/* if it is a PUBREC but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="53560:53645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="53703:54020" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54040:54118" ph="/// Thread for receiving messages ... " />
+            <marker date="1513688418000" expanded="true" signature="54155:66858" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54313:66848" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54347:65290" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54535:65000" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54942:64928" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65095:65272" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65326:66834" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65652:66140" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66498:66580" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66639:66816" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66868:66955" ph="/// Thread for handling keep alive message ... " />
+            <marker date="1513688418000" expanded="true" signature="66994:68333" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67254:68247" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67569:68233" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67761:68038" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68063:68215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68343:68416" ph="/// Thread for raising event ... " />
+            <marker date="1513688418000" expanded="true" signature="68459:75957" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68504:75947" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68647:68782" ph="/* broker need to receive the first message (CONNECT) ... */" />
+            <marker date="1513688418000" expanded="true" signature="69858:75933" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70311:75465" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70460:75443" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70532:75417" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="72887:72992" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73286:73391" ph="/* raise message received event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73693:73799" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="75673:75915" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="75967:76047" ph="/// Process inflight messages queue ... " />
+            <marker date="1513688418000" expanded="true" signature="76092:118032" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76453:117499" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76506:117485" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76988:117467" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="77115:77475" ph="/* message received and peeked from internal queue is processed ... */" />
+            <marker date="1513688418000" expanded="true" signature="77660:77794" ph="/* set timeout tu MaxValue instead of Infinte (-1) to perform ... */" />
+            <marker date="1513688418000" expanded="true" signature="77878:78006" ph="/* a message inflight could be re-enqueued but we have to ... */" />
+            <marker date="1513688418000" expanded="true" signature="78186:116671" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="78925:116641" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79229:79381" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79546:79913" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80650:82696" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80952:81493" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="82906:83647" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="83961:85043" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="85282:85891" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="86190:86451" ph="/* QoS 1, waiting for PUBACK of a PUBLISH message sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="86537:94937" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="87163:90584" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="88001:90538" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90121:90339" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90781:94895" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90978:91242" ph="/* check timeout for receiving PUBACK since PUBLISH was sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="91331:94179" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="91574:92136" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92193:94129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92511:93826" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93167:93409" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93883:94075" ph="/* NOTE : not raise events for SUBACK or UNSUBACK not received ... */" />
+            <marker date="1513688418000" expanded="true" signature="94232:94849" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95236:101486" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95893:97976" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="96168:97930" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98119:101444" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98465:100792" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98708:99270" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99327:100742" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99963:100193" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="100845:101398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="101788:105645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102380:105304" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102630:104939" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104522:104740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104992:105258" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105353:105603" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105945:114092" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106604:109010" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106841:108964" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="108547:108765" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109214:110588" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109309:109497" ph="/* another PUBREC message for the current message due to a retransmitted PUBLISH ... */" />
+            <marker date="1513688418000" expanded="true" signature="109597:110542" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="110731:114050" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111078:113398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111321:111883" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111940:113348" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="112568:112798" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="113451:114004" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="114613:116085" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="115270:115513" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="116923:117083" ph="/* if message received is orphan, no corresponding message in inflight queue ... */" />
+            <marker date="1513688418000" expanded="true" signature="117163:117419" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="117548:118022" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118042:118106" ph="/// Restore session ... " />
+            <marker date="1513688418000" expanded="true" signature="118144:120896" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118226:120715" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118329:120529" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118515:120384" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118853:120358" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119154:119403" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119557:120328" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119780:119940" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120134:120294" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120550:120701" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120774:120886" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120918:121057" ph="/* Load a given session ... */" />
+            <marker date="1513688418000" expanded="true" signature="121409:121544" ph="/// Generate the next message identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="121582:121852" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="121862:121958" ph="/// Finder class for PUBLISH message inside a queue ... " />
+            <marker date="1513688418000" expanded="true" signature="122002:122956" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122212:122417" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="122495:122601" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122646:122946" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122968:123030" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="123066:123201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BeaconMixer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BeaconMixer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/logger.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MQTTBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1520152814000" expanded="false" signature="6:194" ph="..." />
+            <marker date="1520152814000" expanded="true" signature="239:2062" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="310:349" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="474:510" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="482:507" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="631:697" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="639:694" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="816:861" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="888:1545" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="965:1542" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1113:1223" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1606:1695" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1782:1858" ph="{...}" />
+            <marker date="1520152814000" expanded="true" signature="1940:2060" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MqttClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M2Mqtt/MqttClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="150" column="48" lean-forward="false" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding>
+            <marker date="1513688418000" expanded="true" signature="0:547" ph="/* Copyright (c) 2013, 2014 Paolo Patierno ... */" />
+            <marker date="1513688418000" expanded="false" signature="555:1690" ph="..." />
+            <marker date="1513688418000" expanded="true" signature="1483:1616" ph="/* alias needed due to Microsoft.SPOT.Trace in .Net Micro Framework ... */" />
+            <marker date="1513688418000" expanded="true" signature="1729:123203" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="1736:1788" ph="/// MQTT Client ... " />
+            <marker date="1513688418000" expanded="true" signature="1816:122962" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="2226:2339" ph="/// Delagate that defines event handler for PUBLISH message received ... " />
+            <marker date="1513688418000" expanded="true" signature="2448:2554" ph="/// Delegate that defines event handler for published message ... " />
+            <marker date="1513688418000" expanded="true" signature="2667:2772" ph="/// Delagate that defines event handler for subscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="2887:2994" ph="/// Delagate that defines event handler for unsubscribed topic ... " />
+            <marker date="1513688418000" expanded="true" signature="3124:3239" ph="/* Delagate that defines event handler for SUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3352:3469" ph="/* Delagate that defines event handler for UNSUBSCRIBE message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3586:3699" ph="/* Delagate that defines event handler for CONNECT message received ... */" />
+            <marker date="1513688418000" expanded="true" signature="3808:3945" ph="/* Delegate that defines event handler for client disconnection (DISCONNECT message or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="4050:4163" ph="/// Delegate that defines event handler for cliet/peer disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="6999:7091" ph="/// Connection status between client and broker ... " />
+            <marker date="1513688418000" expanded="true" signature="7155:7221" ph="/// Client identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="7284:7351" ph="/// Clean session flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7416:7474" ph="/// Will flag ... " />
+            <marker date="1513688418000" expanded="true" signature="7535:7598" ph="/// Will QOS level ... " />
+            <marker date="1513688418000" expanded="true" signature="7663:7722" ph="/// Will topic ... " />
+            <marker date="1513688418000" expanded="true" signature="7786:7847" ph="/// Will message ... " />
+            <marker date="1513688418000" expanded="true" signature="7913:7983" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="8069:8137" ph="/* MQTT Client Session ... */" />
+            <marker date="1513688418000" expanded="true" signature="8298:8367" ph="/// MQTT client settings ... " />
+            <marker date="1513688418000" expanded="true" signature="8404:8466" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8517:8645" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="8892:8912" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="8922:9385" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="9679:10015" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10032:10172" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10492:10512" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="10522:10855" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="10522:11037" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="10904:11037" ph="/* &lt;param name=&quot;caCert&quot;&gt;CA certificate for secure connection&lt;/param&gt; ... */" />
+            <marker date="1513688418000" expanded="true" signature="11342:11803" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="11934:12596" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="12968:12988" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="12998:13696" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="14118:14138" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="14148:14988" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="15311:15492" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="15520:15656" ph="/* Constructor ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17223" ph="/* MqttClient initialization ... */" />
+            <marker date="1513688418000" expanded="true" signature="16733:17707" ph="/// MqttClient initialization ... " />
+            <marker date="1513688418000" expanded="true" signature="17351:17707" ph="/* &lt;param name=&quot;userCertificateSelectionCallback&quot;&gt;A RemoteCertificateValidationCallback delegate responsible for  ... */" />
+            <marker date="1513688418000" expanded="true" signature="18352:20310" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20320:20521" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="20566:20754" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="20764:21069" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21172:21368" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="21378:21818" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="21988:22167" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="22177:22908" ph="/// Connect to broker ... " />
+            <marker date="1513688418000" expanded="true" signature="23227:25628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23658:23767" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="23800:23921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="24377:25579" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25013:25188" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25638:25709" ph="/// Disconnect from broker ... " />
+            <marker date="1513688418000" expanded="true" signature="25742:25934" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="25955:26029" ph="/* Open client communication ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26607" ph="/* Close client ... */" />
+            <marker date="1513688418000" expanded="true" signature="26546:26652" ph="/// Close client ... " />
+            <marker date="1513688418000" expanded="true" signature="26688:27628" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27638:27784" ph="/// Execute ping to broker for keep alive ... " />
+            <marker date="1513688418000" expanded="true" signature="27823:28425" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="27908:28112" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28144:28415" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="28446:28885" ph="/* Send CONNACK message to the client (connection accepted or not) ... */" />
+            <marker date="1513688418000" expanded="true" signature="29607:29784" ph="/* [v3.1.1] if client id isn't null, the CONNECT message has a cliend id with zero bytes length ... */" />
+            <marker date="1513688418000" expanded="true" signature="30213:30306" ph="/* convert in ms ... */" />
+            <marker date="1513688418000" expanded="true" signature="30757:31017" ph="/* Send SUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31303:31497" ph="/* Send UNSUBACK message to the client ... */" />
+            <marker date="1513688418000" expanded="true" signature="31721:32011" ph="/// Subscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32078:32426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="32436:32660" ph="/// Unsubscribe for message topics ... " />
+            <marker date="1513688418000" expanded="true" signature="32711:33062" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33072:33372" ph="/// Publish a message asynchronously (QoS Level 0 and not retained) ... " />
+            <marker date="1513688418000" expanded="true" signature="33432:33544" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="33554:33929" ph="/// Publish a message asynchronously ... " />
+            <marker date="1513688418000" expanded="true" signature="34017:34615" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="34625:34770" ph="/// Wrapper method for raising events ... " />
+            <marker date="1513688418000" expanded="true" signature="34836:35023" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35033:35133" ph="/// Wrapper method for raising closing connection event ... " />
+            <marker date="1513688418000" expanded="true" signature="35176:35367" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35229:35357" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35377:35550" ph="/// Wrapper method for raising PUBLISH message received event ... " />
+            <marker date="1513688418000" expanded="true" signature="35620:35904" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35683:35894" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="35914:36157" ph="/// Wrapper method for raising published message event ... " />
+            <marker date="1513688418000" expanded="true" signature="36233:36448" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36290:36438" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36458:36621" ph="/// Wrapper method for raising subscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="36684:36921" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36742:36911" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="36931:37117" ph="/// Wrapper method for raising unsubscribed topic event ... " />
+            <marker date="1513688418000" expanded="true" signature="37178:37389" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37238:37379" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="37410:37745" ph="/* Wrapper method for raising SUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38093:38361" ph="/* Wrapper method for raising UNSUBSCRIBE message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="38688:38785" ph="/* Wrapper method for raising CONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39122:39222" ph="/* Wrapper method for raising DISCONNECT message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="39447:39540" ph="/// Wrapper method for peer/client disconnection ... " />
+            <marker date="1513688418000" expanded="true" signature="39582:39739" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39639:39729" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39749:39869" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="39912:40421" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="39938:40172" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40204:40411" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40431:40540" ph="/// Send a message ... " />
+            <marker date="1513688418000" expanded="true" signature="40583:40761" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="40771:40974" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41031:41133" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41143:41417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="41487:43215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41599:41814" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="41846:42468" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42039:42268" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="42769:43061" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43078:43205" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43225:43417" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43474:43571" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="43581:43844" ph="/// Send a message to the broker and wait answer ... " />
+            <marker date="1513688418000" expanded="true" signature="43914:44115" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44125:44402" ph="/// Enqueue a message into the inflight queue ... " />
+            <marker date="1513688418000" expanded="true" signature="44474:49360" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44756:45982" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="44851:45295" ph="/* if it is a PUBLISH message already received (it is in the inflight queue), the publisher ... */" />
+            <marker date="1513688418000" expanded="true" signature="45544:45696" ph="/* the PUBLISH message is alredy in the inflight queue, we don't need to re-enqueue but we need ... */" />
+            <marker date="1513688418000" expanded="true" signature="45736:45950" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46008:49277" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46253:46847" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="46865:46999" ph="/* [v3.1.1] SUBSCRIBE and UNSUBSCRIBE aren't &quot;officially&quot; QOS = 1 ... */" />
+            <marker date="1513688418000" expanded="true" signature="47382:47536" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="47795:49245" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48178:49223" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48523:48740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="48980:49197" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49370:49517" ph="/// Enqueue a message into the internal queue ... " />
+            <marker date="1513688418000" expanded="true" signature="49571:54030" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49778:51129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="49873:50413" ph="/* if it is a PUBREL but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="50662:50796" ph="/* the PUBLISH message isn't in the inflight queue, it was already processed so ... */" />
+            <marker date="1513688418000" expanded="true" signature="50836:51097" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51257:52426" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="51352:51919" ph="/* if it is a PUBCOMP but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="52309:52394" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52552:53677" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="52647:53171" ph="/* if it is a PUBREC but the corresponding PUBLISH isn't in the inflight queue, ... */" />
+            <marker date="1513688418000" expanded="true" signature="53560:53645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="53703:54020" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54040:54118" ph="/// Thread for receiving messages ... " />
+            <marker date="1513688418000" expanded="true" signature="54155:66858" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54313:66848" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54347:65290" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54535:65000" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="54942:64928" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65095:65272" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65326:66834" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="65652:66140" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66498:66580" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66639:66816" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="66868:66955" ph="/// Thread for handling keep alive message ... " />
+            <marker date="1513688418000" expanded="true" signature="66994:68333" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67254:68247" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67569:68233" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="67761:68038" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68063:68215" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68343:68416" ph="/// Thread for raising event ... " />
+            <marker date="1513688418000" expanded="true" signature="68459:75957" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68504:75947" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="68647:68782" ph="/* broker need to receive the first message (CONNECT) ... */" />
+            <marker date="1513688418000" expanded="true" signature="69858:75933" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70311:75465" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70460:75443" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="70532:75417" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="72887:72992" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73286:73391" ph="/* raise message received event ... */" />
+            <marker date="1513688418000" expanded="true" signature="73693:73799" ph="/* raise published message event ... */" />
+            <marker date="1513688418000" expanded="true" signature="75673:75915" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="75967:76047" ph="/// Process inflight messages queue ... " />
+            <marker date="1513688418000" expanded="true" signature="76092:118032" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76453:117499" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76506:117485" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="76988:117467" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="77115:77475" ph="/* message received and peeked from internal queue is processed ... */" />
+            <marker date="1513688418000" expanded="true" signature="77660:77794" ph="/* set timeout tu MaxValue instead of Infinte (-1) to perform ... */" />
+            <marker date="1513688418000" expanded="true" signature="77878:78006" ph="/* a message inflight could be re-enqueued but we have to ... */" />
+            <marker date="1513688418000" expanded="true" signature="78186:116671" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="78925:116641" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79229:79381" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="79546:79913" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80650:82696" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="80952:81493" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="82906:83647" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="83961:85043" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="85282:85891" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="86190:86451" ph="/* QoS 1, waiting for PUBACK of a PUBLISH message sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="86537:94937" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="87163:90584" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="88001:90538" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90121:90339" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90781:94895" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="90978:91242" ph="/* check timeout for receiving PUBACK since PUBLISH was sent or ... */" />
+            <marker date="1513688418000" expanded="true" signature="91331:94179" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="91574:92136" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92193:94129" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="92511:93826" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93167:93409" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="93883:94075" ph="/* NOTE : not raise events for SUBACK or UNSUBACK not received ... */" />
+            <marker date="1513688418000" expanded="true" signature="94232:94849" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95236:101486" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="95893:97976" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="96168:97930" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98119:101444" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98465:100792" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="98708:99270" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99327:100742" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="99963:100193" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="100845:101398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="101788:105645" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102380:105304" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="102630:104939" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104522:104740" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="104992:105258" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105353:105603" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="105945:114092" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106604:109010" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="106841:108964" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="108547:108765" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109214:110588" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="109309:109497" ph="/* another PUBREC message for the current message due to a retransmitted PUBLISH ... */" />
+            <marker date="1513688418000" expanded="true" signature="109597:110542" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="110731:114050" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111078:113398" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111321:111883" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="111940:113348" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="112568:112798" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="113451:114004" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="114613:116085" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="115270:115513" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="116923:117083" ph="/* if message received is orphan, no corresponding message in inflight queue ... */" />
+            <marker date="1513688418000" expanded="true" signature="117163:117419" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="117548:118022" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118042:118106" ph="/// Restore session ... " />
+            <marker date="1513688418000" expanded="true" signature="118144:120896" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118226:120715" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118329:120529" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118515:120384" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="118853:120358" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119154:119403" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119557:120328" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="119780:119940" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120134:120294" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120550:120701" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120774:120886" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="120918:121057" ph="/* Load a given session ... */" />
+            <marker date="1513688418000" expanded="true" signature="121409:121544" ph="/// Generate the next message identifier ... " />
+            <marker date="1513688418000" expanded="true" signature="121582:121852" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="121862:121958" ph="/// Finder class for PUBLISH message inside a queue ... " />
+            <marker date="1513688418000" expanded="true" signature="122002:122956" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122212:122417" ph="/// Constructor ... " />
+            <marker date="1513688418000" expanded="true" signature="122495:122601" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122646:122946" ph="{...}" />
+            <marker date="1513688418000" expanded="true" signature="122968:123030" ph="/// MQTT protocol version ... " />
+            <marker date="1513688418000" expanded="true" signature="123066:123201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

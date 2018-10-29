@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ActivateOnLook.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MQTTBehaviour.cs" Line="39" Column="24" />
+      <File FileName="Assets/Scripts/VRClient.cs" Line="57" Column="22" />
+      <File FileName="Assets/Scripts/RemoteAvatar.cs" Line="70" Column="2" />
+      <File FileName="Assets/Scripts/SimpleRotate.cs" Line="9" Column="2" />
+      <File FileName="Assets/Scripts/ActivateOnLook.cs" Line="27" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
