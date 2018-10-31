@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Mqtt/Scenes/Mqtt_basic.unity
-  isLoaded: 1
-  isActive: 1
