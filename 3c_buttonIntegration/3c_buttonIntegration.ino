@@ -46,7 +46,7 @@ uint8_t wait = 67;
 #error "Requires FastLED 3.1 or later; check github for latest code."
 #endif
 
-#define DATA_PIN    5
+#define DATA_PIN    2
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
 #define NUM_LEDS    25
@@ -103,7 +103,7 @@ int color_r, color_g, color_b, animSpeed;
  * Button
  ***********************************/
 
-const int buttonPin = 4;
+const int buttonPin = 14;
 int buttonState = 0;
 int prev_buttonState = 0;
 int button_counter = 0;
@@ -139,7 +139,7 @@ void setup() {
    * choose color preset as currentPalette
    *********************************************************************/
   
-  currentPalette = testColors_b;
+  currentPalette = testColors_c;
 
 
   currentBlending = LINEARBLEND;

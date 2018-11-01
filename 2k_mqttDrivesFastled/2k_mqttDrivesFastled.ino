@@ -20,9 +20,9 @@
 
 // Update these with values suitable for your network.
 
-const char* ssid = "Difix";
-const char* password = "Difix88288828";
-const char* mqtt_server = "192.168.0.10";
+const char* ssid = "dreammakers";
+const char* password = "dreammakers";
+const char* mqtt_server = "192.168.0.68";
 
 
 WiFiClient espClient;

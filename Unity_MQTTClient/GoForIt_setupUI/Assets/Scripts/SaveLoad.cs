@@ -1,4 +1,14 @@
-﻿// attached to Manager Game object
+﻿/*********************************************************************
+ * GO FOR IT - Swarm hats setup tool
+ * Trigger lights on hat using MQTT
+ * mail@janfiess.com, fall 2018
+ *
+ * This script is attached to the Manager GameObject
+ * Saving data from settings panel persistently in JSON file
+ * and reloading the data on retsart
+ * MQTTBehaviour is MQTT backend, also attached to Manager GameObject
+ *********************************************************************/
+
 
 using UnityEngine;
 using UnityEngine.UI;

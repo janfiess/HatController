@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*********************************************************************
+ * GO FOR IT - Swarm hats setup tool
+ * Trigger lights on hat using MQTT
+ * mail@janfiess.com, fall 2018
+ *
+ * This script is attached to Canvas/Panel_Header/Menu
+ * Functionality of pressing buttons and showing other panels
+ *********************************************************************/
+ 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

@@ -42,7 +42,7 @@ PubSubClient client(espClient);
 #endif
 */
 
-#define DATA_PIN    5
+#define DATA_PIN    2
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
 #define NUM_LEDS    25
@@ -94,7 +94,7 @@ char prefix[]= "janfiess/";
  * Button
  ***********************************/
 
-const int buttonPin = 4;
+const int buttonPin = 14;
 int buttonState = 0;
 int prev_buttonState = 0;
 int button_counter = 0;

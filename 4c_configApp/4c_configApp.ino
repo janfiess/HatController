@@ -1,7 +1,7 @@
 /****************************************************************************
  * 
  * HatController
- * Jan Fiess, October 2018
+ * Jan Fiess, Fall 2018
  * 
  * sources 
  * - the example of the esp8266 example of the library PubSubClient,
@@ -42,7 +42,7 @@ PubSubClient client(espClient);
 #endif
 */
 
-#define DATA_PIN    5
+#define DATA_PIN    2
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
 #define NUM_LEDS    25
@@ -94,7 +94,7 @@ char prefix[]= "janfiess/";
  * Button
  ***********************************/
 
-const int buttonPin = 4;
+const int buttonPin = 14;
 int buttonState = 0;
 int prev_buttonState = 0;
 int button_counter = 0;
@@ -122,7 +122,7 @@ void setup() {
    * choose color preset as currentPalette
    *********************************************************************/
   
-  // currentPalette = testColors_b;
+  //currentPalette = testColors_b;
   currentBlending = LINEARBLEND;
   FastLED.clear ();
 
@@ -130,6 +130,7 @@ void setup() {
   
   EEPROM.begin(512);
   eeprom_deviceId_string = String(EEPROM.read(0));
+  Serial.println("id: " + eeprom_deviceId_string);
 
 
   /* EEPROM end */
@@ -173,7 +174,7 @@ void setup_wifi() {
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
-  Serial.print(F("Message arrived ["));
+  Serial.print(F("Msg arrived ["));
   Serial.print(topic);
   Serial.print("] ");
   for (int i = 0; i < length; i++) {
@@ -181,19 +182,13 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
   Serial.println();
 
-  if (strcmp(topic,"janfiess/anim")==0){
+  if (strcmp(topic,"janfiess/allHats")==0){
   
-    // Serial.println("Topic janfiess/anim");
-    if ((char)payload[1] == '1') lightAnim1();
-    else if ((char)payload[1] == '2') lightAnim2();
-    else if ((char)payload[1] == '3') runningLight1();
-  }
-
-  if (strcmp(topic,"janfiess/static")==0){
-    // Serial.println("Topic janfiess/static");
     if ((char)payload[1] == '1') toBlack();
-    else if ((char)payload[1] == '2') toYellow();
-    else if ((char)payload[1] == '3') toGreen();
+    else if ((char)payload[1] == '2') toWhite();
+    else if ((char)payload[1] == '3') runningLight1();
+    else if ((char)payload[1] == '4') lightAnim1();
+    else if ((char)payload[1] == '5') toOrange();
   }
 
   if (strcmp(topic,"janfiess/setId")==0){
@@ -208,8 +203,8 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
 
 
-  /* Topic is the id of the device: "janfiess/[deviceId]/anim */
-  String id_topic_string = prefix + eeprom_deviceId_string + "/anim";
+  /* Topic is the id of the device: "janfiess/[deviceId]" */
+  String id_topic_string = prefix + eeprom_deviceId_string;
 
   str_len = id_topic_string.length() + 1;
   char id_topic_char_array[str_len];
@@ -218,25 +213,11 @@ void callback(char* topic, byte* payload, unsigned int length) {
   if (strcmp(topic, id_topic_char_array)==0){
     Serial.println("Topic: " + id_topic_string);
 
-    if ((char)payload[1] == '1') lightAnim1();
-    else if ((char)payload[1] == '2') lightAnim2();
-    else if ((char)payload[1] == '3') runningLight1();
-  }
-
-
-  /* Topic is the id of the device: "janfiess/[deviceId]/static */
-  
-  String topic_id_static_string = prefix + eeprom_deviceId_string + "/static";
-
-  str_len = topic_id_static_string.length() + 1;
-  char topic_id_static_charArray[str_len];
-  topic_id_static_string.toCharArray(topic_id_static_charArray, str_len);
-  
-  if (strcmp(topic, topic_id_static_charArray)==0){
-
     if ((char)payload[1] == '1') toBlack();
-    else if ((char)payload[1] == '2') toYellow();
-    else if ((char)payload[1] == '3') toGreen();
+    else if ((char)payload[1] == '2') toWhite();
+    else if ((char)payload[1] == '3') runningLight1();
+    else if ((char)payload[1] == '4') lightAnim1();
+    else if ((char)payload[1] == '5') toOrange();
   }
 }
 
@@ -258,23 +239,24 @@ void lightAnim2(){
   currentPalette = testColors_c;
 } 
 
-void toGreen(){
+void toOrange(){
   doAnimateAllLightsEqually = false;
   doAnimateRunningLight = false;
   doFadeToColor = true;
-  color_r = 0 * BRIGHTNESS /255;
+  color_r = 60 * BRIGHTNESS /255;
   color_g = 35 * BRIGHTNESS /255;
-  color_b = 5 * BRIGHTNESS /255;
+  color_b = 0 * BRIGHTNESS /255;
   animSpeed = 1;
 }
 
-void toYellow(){
+void toWhite(){
+  Serial.println("white");
   doAnimateAllLightsEqually = false;
   doAnimateRunningLight = false;
   doFadeToColor = true;
   color_r = 155 * BRIGHTNESS /255;
   color_g = 155 * BRIGHTNESS /255;
-  color_b = 0 * BRIGHTNESS /255;
+  color_b = 155 * BRIGHTNESS /255;
   animSpeed = 5;
 }
 
@@ -306,7 +288,7 @@ void getId(){
   char eeprom_deviceId_charArray[str_len];
   eeprom_deviceId_string.toCharArray(eeprom_deviceId_charArray, str_len);
 
-  // client.publish("janfiess/msg", eeprom_deviceId_charArray);
+  client.publish("janfiess/getId", eeprom_deviceId_charArray);
   eeprom_deviceId_charArray[0] = 0;
 }
 
@@ -315,10 +297,10 @@ void setId(String boardId_string){
   if(btn_fourClicks_setId == false) return;
 
   /* 
-   * Unsubscribe from "janfiess/[oldDeviceId]/static
+   * Unsubscribe from "janfiess/[oldDeviceId]
    */
    
-  String old_topic_id_static_string = prefix + eeprom_deviceId_string + "/static";
+  String old_topic_id_static_string = prefix + eeprom_deviceId_string;
   str_len = old_topic_id_static_string.length() + 1;
   char old_topic_id_static_charArray[str_len];
   old_topic_id_static_string.toCharArray(old_topic_id_static_charArray, str_len);
@@ -326,17 +308,7 @@ void setId(String boardId_string){
   client.unsubscribe(old_topic_id_static_charArray);
   old_topic_id_static_charArray[0] = 0;
 
-  /* 
-   * Unsubscribe from "janfiess/[oldDeviceId]/anim
-   */
 
-  String old_topic_id_anim_string = prefix + eeprom_deviceId_string + "/anim";
-  str_len = old_topic_id_anim_string.length() + 1;
-  char old_topic_id_anim_charArray[str_len];
-  old_topic_id_anim_string.toCharArray(old_topic_id_anim_charArray, str_len);
-  
-  client.unsubscribe(old_topic_id_anim_charArray);
-  old_topic_id_anim_charArray[0] = 0;
   
   /* 
    * save the new device id in EEPROM 
@@ -368,9 +340,9 @@ void setId(String boardId_string){
   btn_fourClicks_setId = false;
 
 
-  /* subscribe to "janfiess/[deviceId]/anim" */
+  /* subscribe to "janfiess/[deviceId]" */
 
-  String topic_id_anim_string = prefix + eeprom_deviceId_string + "/anim";
+  String topic_id_anim_string = prefix + eeprom_deviceId_string;
 
   str_len = topic_id_anim_string.length() + 1;
   char topic_id_anim_charArray[str_len];
@@ -379,17 +351,6 @@ void setId(String boardId_string){
   
   client.subscribe(topic_id_anim_charArray); // subscribe to device id 
   topic_id_anim_charArray[0] = 0;
-
-
-  /* subscribe to "janfiess/[deviceId]/static" */
-
-  String topic_id_static_string = prefix + eeprom_deviceId_string + "/static";
-
-  str_len = topic_id_static_string.length() + 1;
-  char topic_id_static_charArray[str_len];
-  topic_id_static_string.toCharArray(topic_id_static_charArray, str_len);
-  
-  client.subscribe(topic_id_static_charArray); // subscribe to device id 
 }
 
 void reconnect() {
@@ -403,33 +364,20 @@ void reconnect() {
       // client.publish("janfiess/test", "hello world");
       // ... and resubscribe
       
-      client.subscribe("janfiess/anim");
-      client.subscribe("janfiess/static");
+      client.subscribe("janfiess/allHats");
       client.subscribe("janfiess/setId");
       //client.subscribe("janfiess/#");
 
-      /* subscribe to "janfiess/[deviceId]/anim" */
+
+      /* subscribe to "janfiess/[deviceId]" */
       
-      String topic_id_anim_string = prefix + eeprom_deviceId_string + "/anim";
+      String topic_id_anim_string = prefix + eeprom_deviceId_string;
       
       str_len = topic_id_anim_string.length() + 1;
       char topic_id_anim_charArray[str_len];
       topic_id_anim_string.toCharArray(topic_id_anim_charArray, str_len);
       
       client.subscribe(topic_id_anim_charArray); 
-
-      
-
-      /* subscribe to "janfiess/[deviceId]/static" */
-      
-      String topic_id_static_string = prefix + eeprom_deviceId_string + "/static";
-      
-      str_len = topic_id_static_string.length() + 1;
-      char topic_id_static_charArray[str_len];
-      topic_id_static_string.toCharArray(topic_id_static_charArray, str_len);
-      
-      client.subscribe(topic_id_static_charArray); 
-
       
     
     } else {
