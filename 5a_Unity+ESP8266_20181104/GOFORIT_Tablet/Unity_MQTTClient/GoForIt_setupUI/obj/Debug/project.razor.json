@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/janfiess/Documents/Github/HatController/5a_Unity+ESP8266_20181104/GOFORIT_Tablet/Unity_MQTTClient/GoForIt_setupUI/Assembly-CSharp.csproj",
+  "TargetFramework": "v3.5",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

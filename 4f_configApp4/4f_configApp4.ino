@@ -162,7 +162,7 @@ void setup_wifi() {
   Serial.print(F("Connecting to "));
   Serial.println(ssid);
 
-  WiFi.mode(WIFI_STA);
+  // WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
@@ -174,6 +174,8 @@ void setup_wifi() {
       ESP.restart();
     }  
   }
+
+  randomSeed(micros());
 
   Serial.println("");
   Serial.println(F("WiFi connected"));
@@ -390,9 +392,13 @@ void setId(String boardId_string){
 void reconnect() {
   // Loop until we're reconnected
   if (!client.connected()) {
-    Serial.print(F("Attempting MQTT conn..."));
+    Serial.print(F("MQTT conn?.."));
+    // Create a random client ID
+    String clientId = "ESP8266Client-";
+    clientId += String(random(0xffff), HEX);
+    
     // Attempt to connect
-    if (client.connect("ESP8266Client")) {
+    if (client.connect(clientId.c_str())) {
       Serial.println(F("connected"));
       // Once connected, publish an announcement...
       // client.publish("hat/test", "hello world");

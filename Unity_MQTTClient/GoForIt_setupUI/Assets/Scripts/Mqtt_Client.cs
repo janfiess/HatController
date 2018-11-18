@@ -17,7 +17,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
-using UnityEditor.VersionControl;
+// using UnityEditor.VersionControl;
 
 public class Mqtt_Client : MonoBehaviour {
 	// singleton instance
